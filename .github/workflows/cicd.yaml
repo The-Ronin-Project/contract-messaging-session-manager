@@ -12,7 +12,7 @@ jobs:
     name: build_and_test
     uses: projectronin/github/.github/workflows/event_contract_cicd.yaml@main
     with:
-      schema_name: contract-event-session-manager
+      schema_name: contract-messaging-session-manager
       publish: ${{ github.ref == 'refs/heads/main' }}
     secrets:
       docker_username: ${{ secrets.NEXUS_DOCKER_USERNAME }}
